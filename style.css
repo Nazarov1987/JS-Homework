@@ -1,0 +1,27 @@
+.foto{
+    width: 160px;
+    height: 220px;
+    border: 1px solid black;
+}
+#products{
+    font-family: Lato;
+    font-size: 17px;
+    font-weight: 600;
+	color: darkgreen;
+}
+#price{
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 600;
+	color: red;
+}
+#send{
+    font-family: Lato;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 15px;
+    background-color:honeydew;
+    color: black;
+    border: 1px solid black;
+    margin-left: 60px; 
+}

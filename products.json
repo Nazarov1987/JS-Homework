@@ -1,0 +1,5 @@
+[
+    {"name": "Штаны мужские", "size": "XL", "material": "Хлопок", "color": "Коричневый", "price": 1500, "cover": "https://a.lmcdn.ru/img236x341/G/A/GA020EMPBO91_4253110_1_v2.jpg"}, 
+    {"name": "Рубашка мужская", "size": "XL", "material": "Батист", "color": "Зеленый", "price": 1000, "cover": "https://fashion-ua.com.ua/products/rubashki/424/1.JPG"}, 
+	{"name": "Ботинки мужские", "size": "44", "material": "Кожа", "color": "Черный", "price": 3000, "cover": "https://avatars.mds.yandex.net/get-pdb/194708/52f1b010-ad07-4e43-943d-bb8b45a6dd6d/s1200?webp=false"}
+]

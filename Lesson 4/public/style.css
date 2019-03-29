@@ -1,21 +1,11 @@
-.foto{
-    width: 160px;
-    height: 220px;
-    border: 1px solid black;
-}
-#products{
+
+#text{
     font-family: Lato;
     font-size: 17px;
     font-weight: 600;
 	color: darkgreen;
 }
-#price{
-    font-family: Lato;
-    font-size: 24px;
-    font-weight: 600;
-	color: red;
-}
-#send{
+#addText{
     font-family: Lato;
     font-size: 17px;
     font-weight: 600;
@@ -24,4 +14,18 @@
     color: black;
     border: 1px solid black;
     margin-left: 60px; 
+}
+#quotes{
+    font-family: Lato;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 15px;
+    background-color:honeydew;
+    color: black;
+    border: 1px solid black;
+    margin-left: 60px; 
+}
+.redQuotes{
+   color: red; 
+   font-size: 24px; 
 }

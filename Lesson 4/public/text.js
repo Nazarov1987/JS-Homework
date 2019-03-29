@@ -13,7 +13,7 @@
 
     const $buttonQuotes = document.querySelector('#quotes');
     $buttonQuotes.addEventListener('click', () => {	
-	this.textTwo = this.filterText.replace(/\'/g, '"');   
+	this.textTwo = this.filterText.replace(/\'[^EREN'T]/g, ' " ');   
     document.querySelector('#text').innerHTML = this.textTwo;
 	});
 

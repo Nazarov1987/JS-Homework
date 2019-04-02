@@ -18,11 +18,10 @@ const app = new Vue({
 		})
 	},
 	methods:{
-		buyClick() {//добавление товара в корзину
-            
-    const inProductList = this.products.find(item => item.id);
-    id = inProductList.id
-	this.basketBought.push(this.products[id].price);
+		buyClick(id) {//добавление товара в корзину
+    idEvent = event.target.dataset.id;
+    indexProduct = this.products.findIndex(item => item.id == idEvent);
+	this.basketBought.push(this.products[indexProduct].price);
         if(this.basketBought.length > 0){
         this.display = "none";
         this.displayTwo = "block"; 

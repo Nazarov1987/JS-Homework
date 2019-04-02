@@ -13,7 +13,7 @@
 	<img :src="item.cover" alt="">	
 	<div class="nameProduct"> {{ item.name }} </div>
 	<div class="priceProduct"> {{ item.currency }}{{ item.price }} </div>
-	<button data-id="" @click="buyClick" id="buy" >BUY</button>
+	<button v-bind:data-id="item.id" @click="buyClick" id="buy" >BUY</button>
 	</div>
 </div>	
 </div>

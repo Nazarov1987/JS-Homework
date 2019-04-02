@@ -1,0 +1,72 @@
+#app{
+	width: 1140px;
+    margin: 0 auto;
+}
+.oneProduct{
+	padding-top: 20px;
+	padding-right: 20px;
+	width: 264px;
+}
+
+.allProducts{
+	float: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 30px;
+}
+.nameProduct{
+	font-family: 'Lato';
+    margin-bottom: 15px;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #222222;
+    font-weight: 700;
+    max-height: 2.4em;
+    overflow: hidden;
+	margin-top: 20px;
+}
+.priceProduct{
+	font-family: 'Lato';
+    color: #f16d7f;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+#buy{
+	margin-left: 90px;
+	padding: 10px 20px;
+    background: #f16d7f;
+	font-family: 'Lato';
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+	margin-top: 10px;
+	border: 1px solid grey;
+    border-radius: 15px;
+}
+.basket{
+	margin: 0 auto;
+	width: 300px;
+	height: 100px;
+	background-color: #f16d7f;
+	font-family: 'Lato';
+	color: white;
+    font-size: 22px;
+    font-weight: 900;
+	text-align: center;
+	border: 1px solid grey;
+}
+.clean{
+	margin-left: 487px;
+	padding: 10px 20px;
+    background: #f16d7f;
+	font-family: 'Lato';
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+	margin-top: 20px;
+	border: 1px solid grey;
+    border-radius: 15px;
+}

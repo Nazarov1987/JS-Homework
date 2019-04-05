@@ -1,0 +1,31 @@
+<html>
+
+<head>
+  <title>Basket</title>
+ <link rel="stylesheet" href="style.css">  
+</head>
+
+<body>
+ <div id="app">
+<div>
+<div class="allProducts">
+	<div class="oneProduct" v-for="item in products">
+	<img :src="item.cover" alt="">	
+	<div class="nameProduct"> {{ item.name }} </div>
+	<div class="priceProduct"> {{ item.currency }}{{ item.price }} </div>
+	<button v-bind:data-id="item.id" @click="buyClick" id="buy" >BUY</button>
+	</div>
+</div>	
+</div>
+
+ <div class="basket">
+ <div id="basketSum"  v-bind:style ="{ display:displayTwo }">В Вашей корзине товаров на сумму: {{ summaInBasket() }}</div>
+ <div id="basketEmpty" v-bind:style ="{ display:display }">Корзина пуста</div>
+ </div>
+  <button @click="cleanClick" class="clean"> CLEAN BASKET </button>	 	
+ </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.min.js"></script>
+  <script src="text.js"></script>
+</body>
+
+</html>

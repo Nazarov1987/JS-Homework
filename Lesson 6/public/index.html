@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<link rel="stylesheet" href="styles/style.css"> </head>
+
+<body>
+	<div id="app">
+		<!-- тело Vue -->
+		<div id="bodySite">
+			<!-- Титульная страница сайта -->
+			<div class="container featuredItemsWrap">
+				<!-- товары сайта -->
+				<div class="allProducts">
+					<div class="oneProduct" v-for="item in products">
+						<div id="buy">
+							<button  @click="buyClick(item)"> <img src="images/addToCart.png" alt=""> Add to Cart </button>
+						</div>
+				        <img class="pictureProduct" :src="item.cover" alt="">
+						<div class="nameProduct"> {{ item.name }} </div>
+						<div class="priceProduct"> {{ item.currency }}{{ item.price }} </div>
+					</div>
+				</div>
+				<button class="featuredAllProductsBtn"> Browse All Products <img src="images/arrowToRight.png" alt=""> </button>
+			</div>
+		</div>
+		<!-- Корзина сайта -->
+		<div id="basket">
+			<div class="container shoppingCart">
+				<div class="shoppingGridRow shoppingGridRowHead">
+					<div>Product details</div>
+					<div class="productPrice">Unite price</div>
+					<div class="productQty">Quantity</div>
+					<div class="productShipping">Shipping</div>
+					<div class="productSubtotal">Subtotal</div>
+					<div class="productAction">Action</div>
+				</div>
+				<div><product-cart-component  :basket_bought="basketBought"></product-cart-component></div>
+			</div>
+			<div class="container shoppingBtnsWrap">
+				<button>Clear shopping cart</button>
+				<a href="">
+					<button>Continue shopping</button>
+				</a>
+			</div>
+			<div class="container checkOutWrap">
+				<div class="grandTotalWrap">
+					<div class="infoPrice">
+						<div id="basketEmpty" v-bind:style="{ display:display }">Cart empty</div>
+						<div class="grandTotalSub" v-bind:style="{ display:displayTwo }"> <span>Sub total</span> <span> {{ summaInBasket }} </span> </div>
+						<div class="grandTotalGrand" v-bind:style="{ display:displayTwo }"> <span>Grand total</span> <span> {{ summaInBasket }} </span> </div>
+					</div>
+					<button>Proceed to checkout</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.min.js"></script>
+	<script src="styles/text.js"></script>
+</body>
+
+</html>
